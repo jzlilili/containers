@@ -71,6 +71,7 @@ class Fib:
             return "Fib()"
         return f"Fib({self.n})"
 
+
 class FibIter:
     '''
     This is the iterator helper class for the Fib class.
@@ -88,6 +89,7 @@ class FibIter:
             self.i += 1
             self.a, self.b = self.b, (self.a + self.b)
             return self.a
+
 
 def fib_yield(n=None):
     '''
