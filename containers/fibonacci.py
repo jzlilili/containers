@@ -87,7 +87,7 @@ class FibIter:
         else:
             self.i += 1
             self.a, self.b = self.b, (self.a + self.b)
-            yield self.a
+            return self.a
 
 def fib_yield(n=None):
     '''
