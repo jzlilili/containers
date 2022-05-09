@@ -35,6 +35,11 @@ def range(a, b=None, c=None):
         b = a
         a = 0
 
-    while a < b:
-        yield a
-        a += c
+    if c > 0:
+        while a < b:
+            yield a
+            a += c
+    else:
+        while a > b:
+            yield a
+            a += c
