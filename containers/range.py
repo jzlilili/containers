@@ -28,10 +28,10 @@ def range(a, b=None, c=None):
     but the resulting code is much longer and harder to read/write.
     '''
 
-    if c == None:
+    if c is None:
         c = 1
 
-    if b != None:
+    if b is not None:
         while a < b:
             yield a
             a += c
