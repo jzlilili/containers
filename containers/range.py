@@ -31,13 +31,10 @@ def range(a, b=None, c=None):
     if c is None:
         c = 1
 
-    if b is not None:
-        while a < b:
-            yield a
-            a += c
+    if b is None:
+        b = a
+        a = 0
 
-    else:
-        i = 0
-        while i < a:
-            yield i
-            i += 1
+    while a < b:
+        yield a
+        a += c
